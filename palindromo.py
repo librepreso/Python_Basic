@@ -1,11 +1,13 @@
-def palindromo(palabra):
-    palabra = palabra.replace(" ", "")
-    palabra = palabra.lower()
-    palabra_invertida = palabra[::-1]
-    if palabra == palabra_invertida:
-        return True
-    else:
-        return False 
+# def palindromo(palabra):
+#     palabra = palabra.replace(" ", "")
+#     palabra = palabra.lower()
+#     palabra_invertida = palabra[::-1]
+#     if palabra == palabra_invertida:
+#         return True
+#     else:
+#         return False 
+
+palindromo = lambda palabra: palabra == palabra[::-1]
 
 
 def run():
